@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">practica4</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name_p1">Antioquia Turística</string>
+    <string name="app_name_p2">La pintada</string>
     <string name="action_settings">Settings</string>
 
 </resources>
