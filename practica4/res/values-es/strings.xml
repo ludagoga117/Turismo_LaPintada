@@ -8,4 +8,12 @@
     <string name="intro1">En la llamada otra esquina del Suroeste, a orillas del río Cauca se posa La Pintada, el municipio más joven de Antioquia, turístico en un 100%, desde los años en que oficiaba como corregimiento de Santa Bárbara.</string>
     <string name="intro2">De clima cálido, como todas las tierras aledañas al Cauca, posee hoteles, hosterías, piscinas, sitios de esparcimiento nocturno y ha tomado auge la práctica de ecoturismo, deportes extremos y de aventura como el kayak, rafting y ciclomontañismo, entre otros.</string>
 	<string name="intro3">Esta es una tierra de riqueza natural, patrimonial y humana. Ofrece una actividad turística ligada con la cultura del café. En sus fincas, en la cocina tradicional y en la buena cata, se refleja la hospitalidad expontánea y natural del antioqueño.</string>
+	<string name="sAbout">Acerca de</string>
+	<string name="sHelp">Ayuda</string>
+	<string name="sHotel">Hoteles</string>
+	<string name="sBares">Bares</string>
+	<string name="sTurista">Sitios turísticos</string>
+	<string name="sDemo">Información demográfica</string>
+	<string name="sAboutInfo">Programado por:\nLuis David Goyes Garcés.\nIngeniería Electrónica\nUniversidad de Antioquia</string>
+	<string name="sOk">Entendido</string>
 </resources>
