@@ -23,6 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".HotelesActivity"></activity>
+        <activity android:name=".BaresActivity"></activity>
+        <activity android:name=".TuristaActivity"></activity>
+        <activity android:name=".DemograActivity"></activity>
     </application>
 
 </manifest>

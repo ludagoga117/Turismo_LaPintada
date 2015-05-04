@@ -55,15 +55,18 @@ public class MainActivity extends Activity {
 	}
 	
 	private void BaresMenuItem(){
-		
+		Intent intent = new Intent(this, BaresActivity.class);
+		startActivity(intent);
 	}
 	
 	private void TuristaMenuItem(){
-		
+		Intent intent = new Intent(this, TuristaActivity.class);
+		startActivity(intent);
 	}
 	
 	private void DemograficaMenuItem(){
-		
+		Intent intent = new Intent(this, DemograActivity.class);
+		startActivity(intent);
 	}
 	
 	private void AboutMenuItem(){
@@ -81,6 +84,16 @@ public class MainActivity extends Activity {
 	}
 	
 	private void HelpMenuItem(){
-		
+		new AlertDialog.Builder(this)
+		.setTitle(getResources().getString(R.string.sHelp))
+		.setMessage(getResources().getString(R.string.sHelpText))
+		.setNeutralButton(getResources().getString(R.string.sOk), new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				
+			}
+		}).show();
 	}
 }
