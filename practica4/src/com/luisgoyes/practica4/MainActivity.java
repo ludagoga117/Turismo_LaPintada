@@ -3,6 +3,7 @@ package com.luisgoyes.practica4;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -49,7 +50,8 @@ public class MainActivity extends Activity {
 	}
 	
 	private void HotelesMenuItem(){
-		
+		Intent intent = new Intent(this, HotelesActivity.class);
+		startActivity(intent);
 	}
 	
 	private void BaresMenuItem(){

@@ -17,11 +17,11 @@
 	        >
 	        <TextView
 				style="@style/sTV.titulo"
-				android:text="@string/app_name_p2"
+				android:text="@string/pintada"
 				/>
 			<TextView
 				style="@style/sTV.titulo.subtitulo"
-				android:text="@string/app_name_p1"
+				android:text="@string/antioquia"
 				/>
 	    </LinearLayout>
 		
