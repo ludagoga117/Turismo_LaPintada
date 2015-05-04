@@ -12,5 +12,6 @@ public class DemograActivity  extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_demogra);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 }

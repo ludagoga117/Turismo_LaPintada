@@ -22,9 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HotelesActivity"></activity>
-        <activity android:name=".BaresActivity"></activity>
-        <activity android:name=".TuristaActivity"></activity>
+        <activity android:name=".HotelesActivity" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".BaresActivity" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".TuristaActivity" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".DemograActivity"></activity>
     </application>
 
