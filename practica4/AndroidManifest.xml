@@ -25,7 +25,7 @@
         <activity android:name=".HotelesActivity" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".BaresActivity" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".TuristaActivity" android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".DemograActivity"></activity>
+        <activity android:name=".DemograActivity" android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
