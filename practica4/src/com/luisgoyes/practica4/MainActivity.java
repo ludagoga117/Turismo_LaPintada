@@ -2,6 +2,7 @@ package com.luisgoyes.practica4;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +15,9 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+		F_index f1 = new F_index();
+		fragmentTransaction.add(android.R.id.content, f1).commit();
 	}
 
 	@Override
@@ -50,23 +54,23 @@ public class MainActivity extends Activity {
 	}
 	
 	private void HotelesMenuItem(){
-		Intent intent = new Intent(this, HotelesActivity.class);
-		startActivity(intent);
+		F_hoteles f2 = new F_hoteles();
+		getFragmentManager().beginTransaction().replace(android.R.id.content, f2).commit();
 	}
 	
 	private void BaresMenuItem(){
-		Intent intent = new Intent(this, BaresActivity.class);
-		startActivity(intent);
+		F_bares f3 = new F_bares();
+		getFragmentManager().beginTransaction().replace(android.R.id.content, f3).commit();
 	}
 	
 	private void TuristaMenuItem(){
-		Intent intent = new Intent(this, TuristaActivity.class);
-		startActivity(intent);
+		F_turista f4 = new F_turista();
+		getFragmentManager().beginTransaction().replace(android.R.id.content, f4).commit();
 	}
 	
 	private void DemograficaMenuItem(){
-		Intent intent = new Intent(this, DemograActivity.class);
-		startActivity(intent);
+		F_demogra f5 = new F_demogra();
+		getFragmentManager().beginTransaction().replace(android.R.id.content, f5).commit();
 	}
 	
 	private void AboutMenuItem(){
