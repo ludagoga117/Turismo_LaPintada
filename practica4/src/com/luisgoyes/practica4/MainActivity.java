@@ -10,7 +10,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends Activity {
-
+	private final boolean[] opcionMenuHoteles = {true, false, false, false, false};
+	private final boolean[] opcionMenuBares = {false, true, false, false, false};
+	private final boolean[] opcionMenuTurista = {false, false, true, false, false};
+	private final boolean[] opcionMenuDemogra = {false, false, false, true, false};
+	private final boolean[] opcionMenuPrincipal = {false, false, false, false, true};
+	private boolean[] opcionMenu = opcionMenuPrincipal;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -41,6 +46,9 @@ public class MainActivity extends Activity {
 			case R.id.iDemografica:
 				DemograficaMenuItem();
 				break;
+			case R.id.iPrincipal:
+				PrincipalMenuItem();
+				break;
 			case R.id.iAbout:
 				AboutMenuItem();
 				break;
@@ -50,27 +58,46 @@ public class MainActivity extends Activity {
 			default:
 				break;
 		}
+		invalidateOptionsMenu();
 		return super.onOptionsItemSelected(item);
 	}
 	
+	@Override
+	public boolean onPrepareOptionsMenu (Menu menu) {
+		for(int i = 0; i<= 4; i++){
+			menu.getItem(i).setEnabled(!opcionMenu[i]);
+		}
+	    return true;
+	}
+	
 	private void HotelesMenuItem(){
+		opcionMenu = opcionMenuHoteles;
 		F_hoteles f2 = new F_hoteles();
 		getFragmentManager().beginTransaction().replace(android.R.id.content, f2).commit();
 	}
 	
 	private void BaresMenuItem(){
+		opcionMenu = opcionMenuBares;
 		F_bares f3 = new F_bares();
 		getFragmentManager().beginTransaction().replace(android.R.id.content, f3).commit();
 	}
 	
 	private void TuristaMenuItem(){
+		opcionMenu = opcionMenuTurista;
 		F_turista f4 = new F_turista();
 		getFragmentManager().beginTransaction().replace(android.R.id.content, f4).commit();
 	}
 	
 	private void DemograficaMenuItem(){
+		opcionMenu = opcionMenuDemogra;
 		F_demogra f5 = new F_demogra();
 		getFragmentManager().beginTransaction().replace(android.R.id.content, f5).commit();
+	}
+	
+	private void PrincipalMenuItem(){
+		opcionMenu = opcionMenuPrincipal;
+		F_index f6 = new F_index();
+		getFragmentManager().beginTransaction().replace(android.R.id.content, f6).commit();
 	}
 	
 	private void AboutMenuItem(){

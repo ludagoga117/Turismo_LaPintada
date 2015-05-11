@@ -93,4 +93,6 @@
 	<string name="infoDemo5">Literacy: 80.9% (2005)</string>
 	<string name="infoDemo6">- Urban Area: 80.9%</string>
 	<string name="infoDemo7">- Rural Area: 81.1%</string>
+	
+	<string name="sPrincipal">Principal</string>
 </resources>

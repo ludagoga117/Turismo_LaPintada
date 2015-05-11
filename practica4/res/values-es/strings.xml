@@ -93,4 +93,6 @@
 	<string name="infoDemo5">Alfabetismo: 80.9% (2005)</string>
 	<string name="infoDemo6">- Zona urbana: 80.9%</string>
 	<string name="infoDemo7">- Zona rural: 81.1%</string>
+	
+	<string name="sPrincipal">Principal</string>
 </resources>
